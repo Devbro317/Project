@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Under Construction - SEUSL Career Guidance Unit</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #004d40, #00796b);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 0px solid white;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        header h1, header h2 {
+            margin: 10px 0;
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #004d40;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: block;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #00796b;
+            color: #ffcc00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 14px 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: #00796b;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #00796b;
+            color: #ffcc00;
+        }
+
+        /* Main Content Styles */
+        .content-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content-container h2 {
+            font-size: 2rem;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        .content-container p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: linear-gradient(135deg, #004d40, #00796b);
+            color: white;
+            padding: 40px 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-content h4 {
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            color: #ffcc00;
+        }
+
+        .footer-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-content ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-content ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .footer-content ul li a:hover {
+            color: #ffcc00;
+            transform: translateX(5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            background-color: #003d33;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-bottom a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image\logo.png" alt="University Logo" class="logo">
+        <h1>South Eastern University of Sri Lanka</h1>
+        <h2>Career Guidance Unit</h2>
+    </header>
+
+    <nav>
+		<ul>
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Programs</a>
+				<div class="dropdown-content">
+					<a href="2.html#events">Career Planning</a>
+					<a href="2.html#events">Goal Setting and Professional Development</a>
+					<a href="2.html#events">Spiritual Balance for Social Harmony</a>
+					<a href="2.html#events">Preparing Effective CV and Attractive Covering Letter</a>
+					<a href="2.html#events">Emotional Intelligence</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Students</a>
+				<div class="dropdown-content">
+					<a href="ytu.html">Behavioral Skills Development Program (BSDP)</a>
+					<a href="ytu.html">Students Programmes</a>
+					<a href="ytu.html">Career Resources Collection</a>
+					<a href="ytu.html">Other Resources</a>
+				</div>
+			</li>
+			<li><a href="2.html#events">Events</a></li>
+			<li><a href="2.html#about">About Us</a></li>
+			<li><a href="cu.html">Contact</a></li>
+		</ul>
+	</nav>
+
+    <div class="content-container">
+        <h2>Under Construction</h2>
+        <p>This page is currently under construction. Please check back later for updates.</p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>CGU</h4>
+                <ul>
+					<li><a href="2.html#about" target="_blank">About Us</a></li>
+					<li><a href="2.html#objectives" target="_blank">Our Objectives</a></li>
+					<li><a href="2.html#events" target="_blank">Events</a></li>
+					<li><a href="2.html#job-links" target="_blank">Job Links</a></li>
+					<li><a href="2.html#vacancies" target="_blank">Vacancies</a></li>
+				</ul>
+            </div>
+            <div>
+		<h4>Quick Links</h4>
+				<ul>
+					<li><a href="https://www.seu.ac.lk/fac/index.php" target="_blank">Arts and Culture (FAC)</a></li>
+					<li><a href="https://www.seu.ac.lk/fmc/index.php" target="_blank">Management and Commerce (FMC)</a></li>
+					<li><a href="https://www.seu.ac.lk/fas/index.php" target="_blank">Applied Sciences (FAS)</a></li>
+					<li><a href="https://www.seu.ac.lk/fia/index.php" target="_blank">Islamic Studies & Arabic Language</a></li>
+					<li><a href="https://www.seu.ac.lk/fe/index.php" target="_blank">Engineering (FE)</a></li>
+					<li><a href="https://www.seu.ac.lk/ft/index.php" target="_blank">Faculty of Technology (FT)</a></li>
+					<li><a href="https://www.seu.ac.lk/postgradueateunit/index.php" target="_blank">Postgraduate Unit</a></li>
+					<li><a href="https://www.seu.ac.lk/cedpl/index.php" target="_blank">CEDPL</a></li>
+				</ul>
+			</div>
+            <div>
+                <h4>Contact Us</h4>
+                <p>South Eastern University of Sri Lanka, University Park, Oluvil, #32360, Sri Lanka.</p>
+                <p>+94 67 2255065</p>
+                <p>Email: careergu@seu.ac.lk</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 South Eastern University of Sri Lanka. All rights reserved.</p>
+            <p>Solution By: SEUSL Web Development Team</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for additional interactivity can be added here if needed
+    </script>
+</body>
+</html>

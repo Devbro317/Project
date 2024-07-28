@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Eastern University of Sri Lanka - Career Guidance Unit</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #004d40, #00796b);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 0px solid white;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        header h1, header h2 {
+            margin: 10px 0;
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Main Content Styles */
+        .content-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .content-container h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2rem;
+            color: #00796b;
+        }
+
+        .content-container p {
+            margin: 20px 0;
+        }
+
+        .box-item {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .box-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .box-item img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .box-item:hover img {
+            transform: rotate(10deg); /* Rotate icon on hover */
+        }
+
+        .box-item h3 {
+            margin-top: 0;
+            color: #004d40;
+            font-size: 1.5rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: linear-gradient(135deg, #004d40, #00796b);
+            color: white;
+            padding: 40px 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-content h4 {
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            color: #ffcc00; /* Accent color for headers */
+        }
+
+        .footer-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-content ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-content ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .footer-content ul li a:hover {
+            color: #ffcc00; /* Accent color on hover */
+            transform: translateX(5px); /* Slight movement on hover */
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            background-color: #003d33;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-bottom a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image\logo.png" alt="University Logo" class="logo">
+        <h1>South Eastern University of Sri Lanka</h1>
+        <h2>Career Guidance Unit</h2>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#objectives">Our Objectives</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#job-links">Job Links</a></li>
+            <li><a href="#vacancies">Vacancies</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <section id="about">
+            <div class="box-item">
+                <h2>About Us</h2>
+                <p>The South Eastern University of Sri Lanka's Career Guidance Unit is dedicated to assisting students in realizing their full potential and preparing them for successful careers. Our mission is to provide comprehensive career services, guidance, and resources that support the career development needs of our students and graduates.</p>
+            </div>
+
+            <div class="box-item">
+                <img src="image\icon5.png" alt="Vision Icon">
+                <h3>Vision</h3>
+                <p>Be a center of excellence in producing employable graduates by providing support, guidance and counseling.</p>
+            </div>
+
+            <div class="box-item">
+                <img src="image\icon6.png" alt="Mission Icon">
+                <h3>Mission</h3>
+                <p>To facilitate the career development through professionalism, mannerism, unity and leadership and enabling them to meet employers' expectations by providing a variety of services for enhancing competencies needed by the world of work.</p>
+            </div>
+
+            <div class="box-item">
+                <img src="image\icon7.png" alt="Values Icon">
+                <h3>Our Values</h3>
+                <p>We believe in integrity, excellence, inclusivity, and collaboration. Our services are designed to uphold these values and ensure that all students have access to the resources and support they need to succeed.</p>
+            </div>
+
+            <div class="box-item">
+                <img src="image\icon8.png" alt="Services Icon">
+                <h3>What We Offer</h3>
+                <p>We offer a wide range of services, including career counseling, resume and cover letter reviews, interview preparation, job search strategies, and networking opportunities. Our team is here to assist students at every step of their career journey.</p>
+            </div>
+        </section>
+
+        <section id="objectives">
+            <div class="box-item">
+                <h2>Our Objectives</h2>
+                <p>The overall objective of the project of which this contract will be a part is as follows:</p>
+                <p>• To support capacity building of graduates for non-government partners in the field of employment.</p>
+                <p>• To promote and provide capable graduates in Sri Lanka.</p>
+                <p>• Serve as a link between university, private sector, and government of Sri Lanka.</p>
+                <p>• Produce and develop proficient graduates for the Sri Lankan community as well as the international community.</p>
+                <p>• To assist in providing internationally recognized graduates.</p>
+                <p>• To support the development of a lifelong career guidance system, which services will be available to SEUSL students, based on their needs in education and occupation selection, in accordance with Sri Lankan employment policy.</p>
+            </div>
+        </section>
+
+        <section id="events">
+            <div class="box-item">
+                <h2>Events</h2>
+                <p><strong>'Career Planning'</strong> - Mr. M.M. Ameer<br>1st Year students<br>Faculty of Islamic Studies & Arabic Language<br>Date: 01.06.2016</p>
+                <p><strong>'Goal Setting and Professional Development'</strong> - Mr. M.A. Saleem<br>1st year students<br>Faculty of Management & Commerce<br>Date: 23.06.2016</p>
+                <p><strong>'Spiritual Balance for Social Harmony'</strong> - Mr. N.M. Abdul Mujeeb<br>1st Year students<br>Faculty of Arts & Culture<br>Date: 22.06.2016</p>
+                <p><strong>'Preparing Effective CV and Attractive Covering Letter'</strong> - Mr. A.L. Anverdeen<br>Final year students<br>Faculty of Islamic Studies & Arabic Language<br>Date: 02.09.2016</p>
+                <p><strong>'Emotional Intelligence'</strong> - Mr. M.M. Firose<br>2nd Year students<br>Faculty of Islamic Studies & Arabic Language<br>Date: 30.08.2016</p>
+            </div>
+        </section>
+
+        <section id="job-links">
+            <div class="box-item">
+                <h2>Job Links</h2>
+                <p><a href="http://www.sundayobserver.lk/" target="_blank">Sunday Observer</a></p>
+                <p><a href="http://www.jobsjobs.lk/" target="_blank">Jobs Jobs</a></p>
+                <p><a href="http://www.cv.lk/" target="_blank">CV.lk</a></p>
+                <p><a href="http://www.srilankajobs.net/" target="_blank">Sri Lanka Jobs</a></p>
+                <p><a href="http://jobenvoy.com/" target="_blank">Job Envoy</a></p>
+                <p><a href="http://www.jobmarket.lk/" target="_blank">Job Market</a></p>
+                <p><a href="http://www.topjobs.lk/" target="_blank">Top Jobs</a></p>
+                <p><a href="http://www.jobbank.lk/" target="_blank">Job Bank</a></p>
+                <p><a href="https://www.everjobs.lk/" target="_blank">Ever Jobs</a></p>
+            </div>
+        </section>
+
+        <section id="vacancies">
+            <div class="box-item">
+                <h2>Vacancies</h2>
+                <p>Details of current job vacancies will be updated here. Stay tuned for new opportunities and openings.</p>
+                <!-- Placeholder content, update with actual job listings as needed -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Arts and Culture (FAC)</a></li>
+                    <li><a href="#">Management and Commerce (FMC)</a></li>
+                    <li><a href="#">Applied Sciences (FAS)</a></li>
+                    <li><a href="#">Islamic Studies & Arabic Language</a></li>
+                    <li><a href="#">Engineering (FE)</a></li>
+                    <li><a href="#">Faculty of Technology (FT)</a></li>
+                    <li><a href="#">Postgraduate Unit</a></li>
+                    <li><a href="#">CEDPL</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <p>South Eastern University of Sri Lanka, University Park, Oluvil, #32360, Sri Lanka.</p>
+                <p>+94 67 2255065</p>
+                <p>Email: careergu@seu.ac.lk</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 South Eastern University of Sri Lanka. All rights reserved.</p>
+            <p>Solution By: SEUSL Web Development Team</p>
+        </div>
+    </footer>
+
+    <script>
+    </script>
+</body>
+</html>

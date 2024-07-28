@@ -1,0 +1,334 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f5f5f5; /* Light background for the entire page */
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #004d40, #00796b); /* Gradient background */
+    color: white;
+}
+
+header .logo {
+    width: 120px; /* Slightly larger logo */
+    border-radius: 50%; /* Circular logo */
+    border: 0px solid white; /* White border around logo */
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    border-bottom: 2px solid #00796b; /* Add border below the nav */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #00796b;
+    color: #fff;
+}
+
+nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #004d40; /* Dark green background */
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 14px 20px;
+        display: block;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    nav ul li a:hover {
+        background-color: #00796b; /* Lighter green on hover */
+        color: #ffcc00; /* Accent color on hover */
+    }
+
+    /* Dropdown container */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown button */
+    .dropbtn {
+        background-color: transparent; /* Inherit background from nav */
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 14px 20px;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff; /* White background for dropdown */
+        min-width: 220px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px; /* Rounded corners */
+        overflow: hidden; /* Prevent content overflow */
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: #333; /* Dark text color for contrast */
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1; /* Light grey background on hover */
+        color: #00796b; /* Consistent green text color on hover */
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Show the dropdown button on hover */
+    .dropdown:hover .dropbtn {
+        background-color: #00796b; /* Change button background on hover */
+        color: #ffcc00; /* Accent color on hover */
+    }
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    width: 1200px;
+    height: 700px; /* Adjusted height for better proportion */
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.mySlides {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px; /* Match the border radius of the container */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #e0f2f1); /* Gradient background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+.box-item {
+    text-align: center;
+    width: 22%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.box-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.box-item:hover img {
+    transform: rotate(10deg); /* Rotate icon on hover */
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.link-box {
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: white;
+    padding: 15px 25px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.link-box:hover {
+    background: linear-gradient(135deg, #004d40, #00796b);
+    transform: scale(1.05);
+}
+
+.director-details {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.director-details img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00796b; /* Border around image */
+}
+
+.director-details p {
+    margin: 10px 0;
+}
+
+footer {
+    background: linear-gradient(135deg, #004d40, #00796b);
+    color: white;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-content h4 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #ffcc00; /* Accent color for headers */
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+    color: #ffcc00; /* Accent color on hover */
+    transform: translateX(5px); /* Slight movement on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #003d33;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-bottom a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: white;
+}

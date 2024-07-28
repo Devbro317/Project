@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SEUSL Career Guidance Unit</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #004d40, #00796b);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 0px solid white;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        header h1, header h2 {
+            margin: 10px 0;
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #004d40;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: block;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #00796b;
+            color: #ffcc00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 14px 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: #00796b;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #00796b;
+            color: #ffcc00;
+        }
+
+        /* Main Content Styles */
+        .content-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .testimonial-item {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .testimonial-item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 3px solid #00796b; /* Match the site's style */
+        }
+
+        .testimonial-item h3 {
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-item h5 {
+            color: #555;
+            margin: 5px 0;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: linear-gradient(135deg, #004d40, #00796b);
+            color: white;
+            padding: 40px 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-content h4 {
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            color: #ffcc00;
+        }
+
+        .footer-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-content ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-content ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .footer-content ul li a:hover {
+            color: #ffcc00;
+            transform: translateX(5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            background-color: #003d33;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-bottom a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image\logo.png" alt="University Logo" class="logo">
+        <h1>South Eastern University of Sri Lanka</h1>
+        <h2>Career Guidance Unit</h2>
+    </header>
+
+    <nav>
+		<ul>
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Programs</a>
+				<div class="dropdown-content">
+					<a href="2.html#events">Career Planning</a>
+					<a href="2.html#events">Goal Setting and Professional Development</a>
+					<a href="2.html#events">Spiritual Balance for Social Harmony</a>
+					<a href="2.html#events">Preparing Effective CV and Attractive Covering Letter</a>
+					<a href="2.html#events">Emotional Intelligence</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Students</a>
+				<div class="dropdown-content">
+					<a href="ytu.html">Behavioral Skills Development Program (BSDP)</a>
+					<a href="ytu.html">Students Programmes</a>
+					<a href="ytu.html">Career Resources Collection</a>
+					<a href="ytu.html">Other Resources</a>
+				</div>
+			</li>
+			<li><a href="2.html#events">Events</a></li>
+			<li><a href="2.html#about">About Us</a></li>
+			<li><a href="cu.html">Contact</a></li>
+		</ul>
+	</nav>
+
+    <div class="content-container">
+        <h2>Contact Information</h2>
+
+        <div class="testimonial-item">
+            <h3>DEAN-FAS</h3>
+            <img src="image\ha.png" class="testimonial-img" alt="">
+            <h3>Dr. MH Haroon</h3>
+            <h5>Dean-Faculty of Applied Sciences</h5>
+            <h5>Office: Administration Block</h5>
+            <h5>Mobile: +94 772091105</h5>
+            <h5>Email: <i>haroonmh@seu.ac.lk</i></h5>
+        </div>
+
+        <div class="testimonial-item">
+            <h3>HEAD-DEPARTMENT OF BIOLOGICAL SCIENCES</h3>
+            <img src="image\ri.jpg" class="testimonial-img" alt="">
+            <h3>Mr. AM Riyas Ahamed</h3>
+            <h5>Head-Department of Biological Sciences</h5>
+            <h5>Office: Biology Department Block</h5>
+            <h5>Contact: +94 776009200</h5>
+            <h5>Email: <i>riyasahame@yahoo.co.uk</i></h5>
+        </div>
+
+        <div class="testimonial-item">
+            <h3>HEAD-DEPARTMENT OF CHEMICAL SCIENCES</h3>
+            <img src="image\fa.jpg" class="testimonial-img" alt="">
+            <h3>Dr. MNM Farhath</h3>
+            <h5>Head-Department of Chemical Sciences</h5>
+            <h5>Office: Chemistry Department Block, Room 03</h5>
+            <h5>Contact: +94 710762040</h5>
+            <h5>Email: <i>farhathahamed@yahoo.com</i></h5>
+        </div>
+
+        <div class="testimonial-item">
+            <h3>HEAD-DEPARTMENT OF COMPUTER SCIENCE</h3>
+            <img src="image\na.jpg" class="testimonial-img" alt="">
+            <h3>Prof. HMM Naleer</h3>
+            <h5>Head-Department of Computer Science</h5>
+            <h5>Office: Administration Block, Level 1, Room 12</h5>
+            <h5>Contact: +94 760180102</h5>
+            <h5>Email: <i>hmmnaleer@seu.ac.lk</i></h5>
+        </div>
+
+        <div class="testimonial-item">
+            <h3>HEAD-DEPARTMENT OF PHYSICAL SCIENCES</h3>
+            <img src="image\ja.jpg" class="testimonial-img" alt="">
+            <h3>Dr. MJM Jafeen</h3>
+            <h5>Head-Department of Physical Sciences</h5>
+            <h5>Office: Old Library Building, Room 02</h5>
+            <h5>Contact: +94 779175100</h5>
+            <h5>Email: <i>jafeenmi@seu.ac.lk</i></h5>
+        </div>
+
+        <div class="testimonial-item">
+            <h3>HEAD-DEPARTMENT OF MATHEMATICAL SCIENCES</h3>
+            <img src="image\fa.jpg" class="testimonial-img" alt="">
+            <h3>Mr. MAAM Faham</h3>
+            <h5>Head-Department of Mathematical Sciences</h5>
+            <h5>Office: Administration Block, Level 1, Room 10</h5>
+            <h5>Contact: +94 776168903</h5>
+            <h5>Email: <i>aamfaham@seu.ac.lk</i></h5>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:info@seu.ac.lk">info@seu.ac.lk</a></li>
+                    <li><a href="tel:+94771234567">+94 771234567</a></li>
+                    <li>South Eastern University of Sri Lanka</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://web.facebook.com/FASseusl/?_rdc=1&_rdr" target="_blank">Facebook</a></li>
+                    <li><a href="https://x.com/fas_seusl" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="ytu.html">Privacy Policy</a></li>
+                    <li><a href="ytu.html">Terms of Use</a></li>
+                    <li><a href="ytu,html">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 South Eastern University of Sri Lanka. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
